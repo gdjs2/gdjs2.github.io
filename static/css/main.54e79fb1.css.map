@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.54e79fb1.css","mappings":"AAAA,SAEC,gBAAiB,CACjB,iBAAkB,CAFlB,eAGD,CAEA,KACC,+CACD","sources":["index.css"],"sourcesContent":[".pageDiv {\n\tmax-width: 800px;\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\nbody {\n\tfont-family:Georgia, 'Times New Roman', Times, serif;\n}"],"names":[],"sourceRoot":""}
