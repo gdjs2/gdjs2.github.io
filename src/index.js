@@ -198,7 +198,7 @@ function pageTable() {
         <tr>
           <td style={{display: 'block', minWidth: '400px'}}>{title(myInfo)}</td>
           <td>
-            <img src={process.env.PUBLIC_URL + myInfo.imgLink} style={{display: 'block', width: '90%', marginLeft: 'auto', marginRight: '0'}} alt=''/>
+            {/* <img src={process.env.PUBLIC_URL + myInfo.imgLink} style={{display: 'block', width: '90%', marginLeft: 'auto', marginRight: '0'}} alt=''/> */}
           </td>
         </tr>
         <tr>
