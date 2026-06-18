@@ -1,0 +1,27 @@
+@inproceedings{qi2024symfit,
+author = {Qi, Zhenxiao and Hu, Jie and Xiao, Zhaoqi and Yin, Heng},
+title = {SYMFIT: making the common (concrete) case fast for binary-code concolic execution},
+year = {2024},
+isbn = {978-1-939133-44-1},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Concolic execution is a powerful technique in software testing, as it can systematically explore the code paths and is capable of traversing complex branches. It combines concrete execution for environment modeling and symbolic execution for path exploration. While significant research efforts in con-colic execution have been directed toward the improvement of symbolic execution and constraint solving, our study pivots toward the often overlooked yet most common aspect: concrete execution. Our analysis shows that state-of-the-art binary con-colic executors have largely overlooked the overhead in the execution of concrete instructions. In light of this observation, we propose optimizations to make the common (concrete) case fast. To validate this idea, we develop the prototype, SYMFIT, and evaluate it on standard benchmarks and real-world applications. The results showed that the performance of pure concrete execution is much faster than the baseline SYMQEMU, and is comparable to the vanilla QEMU. Moreover, we showed that the fast symbolic tracing capability of SYMFIT can significantly improve the efficiency of crash deduplication.},
+booktitle = {Proceedings of the 33rd USENIX Conference on Security Symposium},
+articleno = {24},
+numpages = {17},
+location = {Philadelphia, PA, USA},
+series = {SEC '24}
+}
+
+@inproceedings{xiao2026neurosymbolic,
+  author = {Xiao, Zhaoqi and Fu, Yeqi and Wijayadi, Lambang Akbar and Liang, Zhenkai and Yin, Heng},
+  title = {Neurosymbolic Disassembly},
+  year = {2026},
+  month = {November},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  booktitle = {Proceedings of the 2026 ACM SIGSAC Conference on Computer and Communications Security},
+  location = {The Hague, Netherlands},
+  series = {CCS '26},
+  note = {To appear}
+}

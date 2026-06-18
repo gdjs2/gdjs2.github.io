@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6bab4e6f.css",
+    "main.js": "/static/js/main.a1728e7e.js",
+    "static/media/wikidata-sdk.cjs": "/static/media/wikidata-sdk.eb4744bd0c826d060a62.cjs",
+    "index.html": "/index.html",
+    "main.6bab4e6f.css.map": "/static/css/main.6bab4e6f.css.map",
+    "main.a1728e7e.js.map": "/static/js/main.a1728e7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bab4e6f.css",
+    "static/js/main.a1728e7e.js"
+  ]
+}
