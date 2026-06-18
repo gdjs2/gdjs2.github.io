@@ -235,6 +235,25 @@ hr {
 	border-top: 1px solid var(--rule-color);
 }
 
+.publicationMeta {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.publicationBadge {
+	display: inline-flex;
+	padding: 3px 9px;
+	border-radius: 999px;
+	background: rgba(34, 95, 129, 0.1);
+	color: var(--accent-color);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
 .publicationCitation {
 	font-size: 0.95rem;
 	line-height: 1.58;
@@ -256,7 +275,6 @@ hr {
 
 .publicationNote {
 	display: inline-flex;
-	margin-top: 8px;
 	padding: 3px 10px;
 	border-radius: 999px;
 	background: var(--accent-soft);
