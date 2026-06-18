@@ -13,7 +13,7 @@ const myInfo = {
   firstNameCN: '兆祺',
   githubURL: 'https://github.com/gdjs2',
   linkedinURL: 'https://www.linkedin.com/in/zhaoqi-xiao-a6a881249/',
-  orcidURL: 'https://orcid.org/my-orcid?orcid=0009-0000-3621-5423',
+  orcidURL: 'https://orcid.org/0009-0000-3621-5423',
   identity: 'Ph.D. Candidate in Computer Science',
   department: 'Department of Computer Science and Engineering',
   organization: 'University of California, Riverside',
