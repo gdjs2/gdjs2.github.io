@@ -191,7 +191,6 @@ function PhotoFlipCard(props) {
           </div>
         </div>
       </div>
-      <span className='photoCardHint'>Click to flip</span>
     </button>
   );
 }
@@ -315,7 +314,7 @@ function news() {
         <li>
           07/02/2022: I obtained B.Eng. in Computer Science from <NewTagLink link='https://www.sustech.edu.cn' tag='Southern University of Science and Technology (SUSTech)'/>.
           It is my great honor to be advised by <NewTagLink link='http://yinqian.org' tag='Professor Yinqian Zhang'/>.
-          Dissertation: <PublicLink link='/Zhaoqi_UG_Thesis_4_print.pdf' tag='WASMYun: Control Flow Integrity for Ahead-of-Time WebAssembly'/>
+          [<PublicLink link='/Zhaoqi_UG_Thesis_4_print.pdf' tag='Dissertation'/>] 
         </li>
       </ul>
     </SectionCard>
