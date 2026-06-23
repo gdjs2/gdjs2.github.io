@@ -24,9 +24,8 @@ export function PublicLink({ link, tag }) {
 
 export function SocialLink({ href, label, icon: Icon }) {
   return (
-    <a className='socialLink' href={href} target='_blank' rel='noreferrer' aria-label={label}>
+    <a className='socialLink' href={href} target='_blank' rel='noreferrer' aria-label={label} title={label}>
       <Icon aria-hidden='true' />
-      <span>{label}</span>
     </a>
   );
 }
