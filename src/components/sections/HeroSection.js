@@ -1,4 +1,4 @@
-import { FaEnvelope, FaFilePdf, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaFilePdf, FaGithub, FaKey, FaLinkedin } from 'react-icons/fa';
 import { SiOrcid } from 'react-icons/si';
 import { myInfo } from '../../data/siteData';
 import { formatName, formatNameCN, formatNameCNAlt } from '../../utils/person';
@@ -25,6 +25,11 @@ const socialLinks = [
     href: addMailTo(myInfo.email),
     label: 'Email',
     icon: FaEnvelope,
+  },
+  {
+    href: process.env.PUBLIC_URL + '/id_rsa.pub',
+    label: 'Pubkey',
+    icon: FaKey,
   },
   {
     href: process.env.PUBLIC_URL + myInfo.cvLink,
