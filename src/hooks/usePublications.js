@@ -45,13 +45,21 @@ export default function usePublications() {
 
         for (const [index, entry] of [...citation.data].reverse().entries()) {
           const badge = await formatPublicationBadge(entry, venueCache);
+          const doi = String(entry.DOI || entry.doi || '').trim();
+          const citationEntry = { ...entry };
+          delete citationEntry.DOI;
+          delete citationEntry.doi;
 
           bibliographyEntries.push({
             id: entry.id || `${entry.type || 'publication'}-${index}`,
             badge,
+            doi: doi ? {
+              value: doi,
+              href: /^https?:\/\//i.test(doi) ? doi : `https://doi.org/${doi}`,
+            } : null,
             html: emphasizeOwnName(
               makePublicationCitationClickable(
-                new Cite([entry]).format('bibliography', {
+                new Cite([citationEntry]).format('bibliography', {
                   format: 'html',
                   template: 'association-for-computing-machinery',
                   lang: 'en-US',

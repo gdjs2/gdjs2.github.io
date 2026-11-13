@@ -254,6 +254,24 @@ hr {
 	letter-spacing: 0.05em;
 }
 
+.publicationDoi {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	padding: 2px 9px;
+	border: 1px solid var(--border-color);
+	border-radius: 999px;
+	color: var(--accent-color);
+	font-size: 0.78rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.publicationDoi:hover {
+	background: var(--accent-soft);
+	text-decoration: none;
+}
+
 .publicationCitation {
 	font-size: 0.95rem;
 	line-height: 1.58;
