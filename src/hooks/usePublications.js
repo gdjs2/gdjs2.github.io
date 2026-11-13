@@ -46,9 +46,12 @@ export default function usePublications() {
         for (const [index, entry] of [...citation.data].reverse().entries()) {
           const badge = await formatPublicationBadge(entry, venueCache);
           const doi = String(entry.DOI || entry.doi || '').trim();
+          const url = String(entry.URL || entry.url || '').trim();
           const citationEntry = { ...entry };
           delete citationEntry.DOI;
           delete citationEntry.doi;
+          delete citationEntry.URL;
+          delete citationEntry.url;
 
           bibliographyEntries.push({
             id: entry.id || `${entry.type || 'publication'}-${index}`,
@@ -57,6 +60,7 @@ export default function usePublications() {
               value: doi,
               href: /^https?:\/\//i.test(doi) ? doi : `https://doi.org/${doi}`,
             } : null,
+            url,
             html: emphasizeOwnName(
               makePublicationCitationClickable(
                 new Cite([citationEntry]).format('bibliography', {

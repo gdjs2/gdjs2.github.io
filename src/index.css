@@ -254,7 +254,7 @@ hr {
 	letter-spacing: 0.05em;
 }
 
-.publicationDoi {
+.publicationLink {
 	display: inline-flex;
 	align-items: center;
 	gap: 3px;
@@ -267,7 +267,7 @@ hr {
 	text-decoration: none;
 }
 
-.publicationDoi:hover {
+.publicationLink:hover {
 	background: var(--accent-soft);
 	text-decoration: none;
 }

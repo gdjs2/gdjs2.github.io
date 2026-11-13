@@ -13,19 +13,30 @@ export default function PublicationsSection({ publicationState }) {
         <div className='bibliographyView'>
           {publicationState.entries.map(entry => (
             <article className='publicationEntry' key={entry.id}>
-              {entry.badge || entry.note || entry.doi ? (
+              {entry.badge || entry.note || entry.doi || entry.url ? (
                 <div className='publicationMeta'>
                   {entry.badge ? <div className='publicationBadge'>{entry.badge}</div> : null}
                   {entry.note ? <div className='publicationNote'>{entry.note}</div> : null}
                   {entry.doi ? (
                     <a
-                      className='publicationDoi'
+                      className='publicationLink'
                       href={entry.doi.href}
                       target='_blank'
                       rel='noreferrer'
                       aria-label={`Open DOI ${entry.doi.value}`}
                     >
                       DOI <span aria-hidden='true'>↗</span>
+                    </a>
+                  ) : null}
+                  {entry.url ? (
+                    <a
+                      className='publicationLink'
+                      href={entry.url}
+                      target='_blank'
+                      rel='noreferrer'
+                      aria-label='Open publication URL'
+                    >
+                      URL <span aria-hidden='true'>↗</span>
                     </a>
                   ) : null}
                 </div>
